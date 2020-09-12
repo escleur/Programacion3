@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        th{
+            background-color:#444;
+            color: #fff;
+        }
+        table, th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Horarios de la facu</caption>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <colgroup>
+                <col span="4">
+                <col style="background-color: green;">
+            </colgroup>
+            <tr>
+                <td rowspan="2">Prog III</td>
+                <td>Labo III</td>
+                <td>Contable</td>
+                <td>Ingles</td>
+                <td>Matematica</td>
+            </tr>
+            <tr>
+                <td>Base de datos</td>
+                <td>Contable</td>
+                <td>Ingles</td>
+                <td>Matematica</td>
+            </tr>
+            <tr>
+                <td colspan="5">Recreo</td>
+            </tr>
+            <tr>
+                <td>Prog III</td>
+                <td>Labo III</td>
+                <td>Contable</td>
+                <td>Ingles</td>
+                <td>Matematica</td>
+            </tr>
+            <tr>
+                <td>Prog III</td>
+                <td>Labo III</td>
+                <td>Contable</td>
+                <td>Ingles</td>
+                <td>Matematica</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tfoot>
+    </table>
+</body>
+</html>
