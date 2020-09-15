@@ -2,6 +2,8 @@
 //composer require firebase/php-jwt
 require_once './materia.php';
 require_once './usuario.php';
+require_once './profesor.php';
+
 require __DIR__.'/vendor/autoload.php';
 
 use \Firebase\JWT\JWT;
@@ -14,7 +16,7 @@ $key = 'clave';
 $status = 'loguot';
 try{
     $decoded = JWT::decode($token, $key, array('HS256'));
-    print_r($decoded);
+    //print_r($decoded);
     $status = 'logged';
 }catch(Throwable $th){
     echo 'No logueado<br/>';
@@ -141,15 +143,21 @@ switch($path_info){
             switch($method){
                 case 'POST': // AGREGA RECURSOS
                     $nombre = $_POST['nombre'] ?? '';
-                    $cuatrimestre = $_POST['legajo'] ?? '';
-                    $materia = new Profesor($nombre, $legajo);
+                    $legajo = $_POST['legajo'] ?? '';
+                    $profesor = new Profesor($nombre, $legajo);
                     /*--------------------------*/
                     //$auto->saveAuto();
                     /*--------------------------*/
                     $lista = Profesor::readProfesorJson();
-                    $materia->_id = Materia::autoId($lista);
-                    array_push($lista, $materia);
-                    Materia::saveMateriaJson($lista);
+                    $unique = $profesor->unique($lista);
+
+                    if($unique){
+                        array_push($lista, $profesor);
+                        Profesor::saveProfesorJson($lista);
+
+                    }else{
+                        echo 'El legajo no es unico';
+                    }
                     /*--------------------------*/
                     //$lista = Auto::readAutoSerialize();
                     //array_push($lista, $auto);
@@ -163,7 +171,7 @@ switch($path_info){
                     /*--------------------------*/
                     //$lista = Auto::readAuto();
                     /*--------------------------*/
-                    $lista = Materia::readMateriaJson();
+                    $lista = Profesor::readProfesorJson();
                     /*--------------------------*/
                     //$lista = Auto::readAutoSerialize();
                     /*--------------------------*/
