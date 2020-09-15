@@ -46,14 +46,16 @@ class Usuario extends FileManager{
 
     }
 
-    public static function autoId($array){
-        $id = 0;
+    public function verificar($array){
+        $login = false;
         foreach($array as $item){
-            if($item->_id > $id){
-                $id = $item->_id;
+            if($item->_email == $this->_email){
+                if($item->_clave == $this->_clave){
+                    $login = true;
+                }
             }
         }
-        return $id + 1;
+        return $login;
     }
     // public static function saveAutoSerialize($array){
     //     FileManager::saveSerialize("auto.ser", $array);
