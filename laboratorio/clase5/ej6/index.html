@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Persona(nombre, edad){
+            this.nombre = nombre || "natalia natalia";
+            this.edad = edad || -1;
+            // this.saludar = function(){
+            //     console.log("Hola me llamo " + this.nombre);
+            // }
+        }
+        const p1 = new Persona("Juan", 30);
+        console.log(p1);
+
+        console.log(typeof p1);
+        console.log(p1 instanceof Persona)
+
+        Persona.prototype.saludar= function(){
+                console.log("Hola me llamo " + this.nombre);
+            }
+
+
+
+
+
+        function Empleado(nombre, edad, sueldo){
+            this.sueldo = sueldo;
+            //this.super = Persona;
+            //this.super(nombre, edad);
+            this.super = Persona.call(this, nombre, edad);
+        }    
+
+        Empleado.prototype = new Persona();
+
+
+        const emp1 = new Empleado("Analia", 30, 80000);
+
+        Empleado.prototype.despedir = function(){
+            console.log("chau");
+        }
+
+        function EmpleadoEspecializado(nombre, edad, sueldo, especialidad){
+            this.especialidad = especialidad || "Inutil";
+            this.super = Empleado;
+            this.super(nombre, edad, sueldo);
+        }
+        EmpleadoEspecializado.prototype.contarEspecialidad = function(){
+            console.log("Mi especialidad es " + this.especialidad);
+        }
+        EmpleadoEspecializado.prototype = new Empleado();
+        const emp2 = new EmpleadoEspecializado("Jose", 45, 70000, "Soldador");
+
+        console.log(emp2);
+        console.log(emp2 instanceof Persona); //true
+    </script>
+</body>
+</html>

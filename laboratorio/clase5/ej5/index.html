@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const array = [];
+        const obj = {};
+        const obj2 = new Object();
+
+        const unaPersona ={
+            nombre:"Juan",
+            edad: 30,
+            nada: true,
+            hobbies: ["ajedrez", "ping pong", "fortnite"],
+            redesSociales:{
+                twitter: "@juanperez",
+                facebook: "Juani2004",
+                instagram: "@juanito",
+            
+            },
+            saludar:function(){
+                //console.log("Hola me llamo "+ this.nombre + " y tengo " + this.edad + " años")
+                console.log(`Hola me llamo ${this.nombre} y tengo ${this.edad} años`);
+            }
+        };
+        unaPersona.genero = "M"
+
+        unaPersona.saludar();
+
+        let atributo = "nombre";
+        console.log(unaPersona[atributo]);
+
+        for (const key in unaPersona) {
+            console.log(key, unaPersona[key]);
+        }
+
+        console.log(Object.keys(unaPersona));
+        console.log(Object.values(unaPersona));
+
+        function f1(){
+            console.log('Soy una funcion nombrada');
+        }
+
+        const f2 = function(){
+            console.log('Soy una funcion expresada');
+        }
+        const f3 = f2;
+
+        (function(){
+            console.log('Soy una funcion autoinvocada');
+        })();
+
+    </script>
+</body>
+</html>
