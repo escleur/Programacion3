@@ -1,0 +1,13 @@
+div, .miDiv {
+  background-color: black;
+  border: 5px solid black;
+}
+
+div.importante, .importante.miDiv {
+  background-color: red;
+}
+
+.miDiv {
+  width: 100px;
+}
+/*# sourceMappingURL=index.css.map */

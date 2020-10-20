@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer type="module"></script>
+</head>
+<body>
+    <section class="container" id="dataIn">
+        <form>
+            <label>
+                Nombre:<input type="text" id="txtNombre" name="nombre" required>
+            </label>
+            <br><br>
+            <label>
+                Apellido:<input type="text" id="txtApellido" name="apellido" required>
+            </label>
+            <br><br>
+            <label>
+                Email:<input type="text" id="txtEmail" name="email" required>
+            </label>
+            <br><br>
+            <fieldset>
+                <legend>Genero</legend>
+                <input type="radio" name="gender" id="rdoM" value="Male" chequed>Masculino
+                <br><br>
+                <input type="radio" name="gender" id="rdoF" value="Female" chequed>Femenino
+                <br><br>
+            </fieldset>
+            <button>Alta Persona</button>
+        </form>
+    </section>
+    <button id="btnTabla">Cargar Tabla</button>
+    <section class="container">
+        <div id="divTabla">
+
+        </div>
+    </section>
+</body>
+</html>

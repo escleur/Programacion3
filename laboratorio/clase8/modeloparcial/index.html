@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" type="module"></script>
+</head>
+<body>
+
+    <h1>Parcial de Laboratorio 3</h1>
+    <section class="container" id="dataIn">
+        <form>
+            <input type="hidden" id="txtId" name="id">
+            <label>
+                Nombre: <input type="text" id="txtNombre" name="nombre" required>
+            </label>
+           <label>
+                Apellido: <input type="text" id="txtApellido" name="apellido" required>
+            </label>
+           <label>
+                Email: <input type="text" id="txtEmail" name="email" required>
+            </label>
+            <fieldset>
+                <legend>Genero</legend>
+                <label for="rdoM"><input type="radio" name="gender" id="rdoM" value="Male" checked>Masculino</label>
+                <label for="rdoF"><input type="radio" name="gender" id="rdoF" value="Female">Femenino</label>
+            </fieldset>
+            <div class="botones">
+                <button id="alta" name='alta'>Alta Persona</button>
+                <button id="modificar" name='modificar'>Modificar Persona</button>
+                <button id="baja" name='baja'>Baja Persona</button>
+                <input type="reset" id="cancelar" name='cancelar' value='Cancelar'>
+            </div>
+
+        </form>
+    </section>
+    <section class="container">
+        <div id="divTabla">
+            
+        </div>
+    </section>
+</body>
+</html>

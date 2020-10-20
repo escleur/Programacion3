@@ -1,0 +1,18 @@
+// @import "colors";
+@import "mixin";
+$back_color: black;
+
+div{
+
+    background-color: $back_color;
+    @include mx_border(5px);
+    &.importante{
+        background-color: red;
+    }
+}
+
+.miDiv{
+    @extend div;
+
+    width: 100px;
+}

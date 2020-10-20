@@ -10,77 +10,117 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html"><img src="./image/logo.svg" alt="Imagen del logo"></a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./anuncios.html">Anuncios</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="nav">
+            <a href="./index.html"><img src="./image/logo.svg" alt="Imagen del logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./anuncios.html">Anuncios</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
         <h1>Venta de Casas y Departamentos
             Exclusivos de Lujo</h1>
     </header>
 
-    <section>
+    <section id="nosotros">
         <h2>Más Sobre Nosotros</h2>
         <div>
-            <img src="./image/icono1.svg" alt="icono seguridad">
-            <h3>Seguridad</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat molestias, voluptate quo
-                eaque qui architecto asperiores exercitationem commodi, doloribus nisi maxime distinctio voluptas neque
-                sint. Quo corporis laboriosam recusandae!</p>
-        </div>
+            <div>
+                <img src="./image/icono1.svg" alt="icono seguridad">
+                <h3>Seguridad</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat molestias, voluptate quo
+                    eaque qui architecto asperiores exercitationem commodi, doloribus nisi maxime distinctio voluptas neque
+                    sint. Quo corporis laboriosam recusandae!</p>
+            </div>
 
-        <div>
-            <img src="./image/icono2.svg" alt="icono mejor precio">
-            <h3>El Mejor Precio</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat molestias, voluptate quo
-                eaque qui architecto asperiores exercitationem commodi, doloribus nisi maxime distinctio voluptas neque
-                sint. Quo corporis laboriosam recusandae!</p>
-        </div>
+            <div>
+                <img src="./image/icono2.svg" alt="icono mejor precio">
+                <h3>El Mejor Precio</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat molestias, voluptate quo
+                    eaque qui architecto asperiores exercitationem commodi, doloribus nisi maxime distinctio voluptas neque
+                    sint. Quo corporis laboriosam recusandae!</p>
+            </div>
 
-        <div>
-            <img src="./image/icono3.svg" alt="icono a tiempo">
-            <h3>A Tiempo</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat molestias, voluptate quo
-                eaque qui architecto asperiores exercitationem commodi, doloribus nisi maxime distinctio voluptas neque
-                sint. Quo corporis laboriosam recusandae!</p>
+            <div>
+                <img src="./image/icono3.svg" alt="icono a tiempo">
+                <h3>A Tiempo</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat molestias, voluptate quo
+                    eaque qui architecto asperiores exercitationem commodi, doloribus nisi maxime distinctio voluptas neque
+                    sint. Quo corporis laboriosam recusandae!</p>
+            </div>
         </div>
     </section>
 
     <main>
         <h2>Casas y Departamentos en Venta</h2>
+        <div class="maincuerpo">
+            <article>
+                <img src="./image/anuncio1.jpg" alt="Foto casa 1">
+                <div>
+                    <h3>Casa de Lujo en el Lago</h3>
+                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
+                    <p class="precio">U$S350.000</p>
+                    <div class="caracteristicas">
+                        <img src="./image/icono_wc.svg" alt="">
+                        <span>3</span>
+                        <img src="./image/icono_estacionamiento.svg" alt="">
+                        <span>3</span>
+                        <img src="./image/icono_dormitorio.svg" alt="">
+                        <span>4</span>
+                    </div>
+                    <a href="#">Ver Propiedad</a>
 
-        <article>
-            <img src="./image/anuncio1.jpg" alt="Foto casa 1">
-            <h3>Casa de Lujo en el Lago</h3>
-            <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-            <p>U$S350.000</p>
-            <a href="#">Ver Propiedad</a>
-        </article>
+                </div>
+            </article>
 
-        <article>
-            <img src="./image/anuncio2.jpg" alt="Foto casa 2">
-            <h3>Casa terminados de lujo</h3>
-            <p>Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
-            <p>U$S275.000</p>
-            <a href="#">Ver Propiedad</a>
-        </article>
+            <article>
+                <img src="./image/anuncio2.jpg" alt="Foto casa 2">
+                <div>
+                    <h3>Casa terminados de lujo</h3>
+                    <p>Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
+                    <p class="precio">U$S275.000</p>
+                    <div class="caracteristicas">
+                        <img src="./image/icono_wc.svg" alt="">
+                        <span>3</span>
+                        <img src="./image/icono_estacionamiento.svg" alt="">
+                        <span>3</span>
+                        <img src="./image/icono_dormitorio.svg" alt="">
+                        <span>4</span>
+                    </div>
+                    <a href="#">Ver Propiedad</a>
 
-        <article>
-            <img src="./image/anuncio3.jpg" alt="Foto casa 3">
-            <h3>Casa co Pileta</h3>
-            <p>Casa con pileta y acabados de lujo en la ciudad, excelente oportunidad</p>
-            <p>U$S250.000</p>
-            <a href="#">Ver Propiedad</a>
-        </article>
+                </div>
+            </article>
 
-        <a href="./anuncios.html">Ver Todas</a>
+            <article>
+                <img src="./image/anuncio3.jpg" alt="Foto casa 3">
+                <div>
+                    <h3>Casa con Pileta</h3>
+                    <p>Casa con pileta y acabados de lujo en la ciudad, excelente oportunidad</p>
+                    <p class="precio">U$S250.000</p>
+                    <div class="caracteristicas">
+                        <img src="./image/icono_wc.svg" alt="">
+                        <span>3</span>
+                        <img src="./image/icono_estacionamiento.svg" alt="">
+                        <span>3</span>
+                        <img src="./image/icono_dormitorio.svg" alt="">
+                        <span>4</span>
+                    </div>
+                    <a href="#">Ver Propiedad</a>
+
+                </div>
+            </article>
+        </div>
+        <div class="mainpie">
+            <a href="./anuncios.html">Ver Todas</a>
+
+        </div>
     </main>
 
-    <section>
+    <section class="contacto">
         <h2>Encuentra la casa de tus sueños</h2>
         <p>
             Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad
@@ -88,7 +128,7 @@
         <a href="./contacto.html">Contactanos</a>
     </section>
 
-    <section>
+    <section class="blog">
         <h2>Nuestro Blog</h2>
         <article>
             <img src="./image/blog1.jpg" alt="Foto blog 1">
@@ -106,13 +146,16 @@
         </article>
     </section>
 
-    <h2>Comentarios</h2>
-    <img src="./image/comilla.svg" alt="comilla">
-    <blockquote>
-        <p>El parsonal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con
-            todas mis expectativas.</p>
-    </blockquote>
-    <p>- Juan Perez</p>
+    <section class="comentario">
+        <h2>Comentarios</h2>
+        <img src="./image/comilla.svg" alt="comilla">
+        <blockquote>
+            <p>El parsonal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con
+                todas mis expectativas.</p>
+        </blockquote>
+        <p>- Juan Perez</p>
+
+    </section>
 
 
     <footer>

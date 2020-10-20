@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,GAAG,EASH,MAAM,CATH;EAEC,gBAAgB,EAJP,KAAK;ECDd,MAAM,EDMa,GAAG,CCNP,KAAK,CAAC,KAAK;CDU7B;;AAPD,AAII,GAJD,AAIE,WAAW,EAAX,WAAW,AAKhB,MAAM,CALU;EACR,gBAAgB,EAAE,GAAG;CACxB;;AAGL,AAAA,MAAM,CAAA;EAGF,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "index.scss",
+        "_mixin.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}

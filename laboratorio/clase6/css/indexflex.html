@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenido{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            /* display: inline-block; */
+            
+        }
+        div.contenido:nth-of-type(odd){
+            background-color: red;
+        }
+        .contenedor{
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 800px;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="./logo.svg" alt="logo"></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Avisos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <div class="contenido" style="order:3;flex-grow: 2;">1</div>
+        <div class="contenido">2</div>
+        <div class="contenido">3</div>
+        <div class="contenido">4</div>
+        <div class="contenido">5</div>
+        <div class="contenido">6</div>
+    </div>
+</body>
+</html>

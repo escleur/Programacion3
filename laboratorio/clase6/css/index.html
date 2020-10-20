@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenido{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            /* display: inline-block; */
+            
+        }
+        div:nth-of-type(odd){
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="./logo.svg" alt="logo"></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Avisos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenido" style="position: sticky; left: 50px; top: 0px;">1</div>
+    <div class="contenido" style="position: absolute; left: 150px;">2</div>
+    <div class="contenido">3</div>
+    <div class="contenido" style="position: fixed;">4</div>
+    <div class="contenido">5</div>
+    <div class="contenido">6</div>
+</body>
+</html>
